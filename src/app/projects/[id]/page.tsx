@@ -13,50 +13,93 @@ type Project = {
 
 // Mock data for the projects (in a real app, this might come from a CMS or DB)
 const PROJECT_DETAILS: Record<string, Project> = {
+
+    "e-commerce-app": {
+        title: "E-Commerce App",
+        role: "Flutter & Python",
+        description: "A comprehensive learning companion app built with Flutter and a powerful Python backend. It utilizes advanced AI models to provide personalized learning paths, real-time feedback, and interactive study sessions.",
+        features: ["Personalized AI Tutor", "Cross-platform mobile app", "Real-time sync", "Analytics dashboard"],
+        images: [
+            
+           "/E-Commerce-App/image16.jpeg",
+            "/E-Commerce-App/image1.jpeg",
+           "/E-Commerce-App/image2.jpeg",
+           "/E-Commerce-App/image3.jpeg",
+           "/E-Commerce-App/image4.jpeg",
+            "/E-Commerce-App/image5.jpeg",
+           "/E-Commerce-App/image6.jpeg",
+           "/E-Commerce-App/image7.jpeg",
+           "/E-Commerce-App/image8.jpeg",
+             "/E-Commerce-App/image9.jpeg",
+           "/E-Commerce-App/image10.jpeg",
+           "/E-Commerce-App/image11.jpeg",
+           "/E-Commerce-App/image12.jpeg",
+            "/E-Commerce-App/image13.jpeg",
+           "/E-Commerce-App/image14.jpeg",
+            "/E-Commerce-App/image15.jpeg",
+   
+        ]
+    },
     "learnmate-ai": {
         title: "LearnMate AI",
         role: "Flutter & Python",
         description: "A comprehensive learning companion app built with Flutter and a powerful Python backend. It utilizes advanced AI models to provide personalized learning paths, real-time feedback, and interactive study sessions.",
         features: ["Personalized AI Tutor", "Cross-platform mobile app", "Real-time sync", "Analytics dashboard"],
         images: [
-            "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1200",
-            "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200",
-            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200"
+            "/Learnmate-AI/image1.jpeg",
+           "/Learnmate-AI/image2.jpeg",
+           "/Learnmate-AI/image3.jpeg",
+           "/Learnmate-AI/image4.jpeg",
         ]
     },
-    "ai-exam-analyzer": {
-        title: "AI Exam Analyzer",
-        role: "Local Transformers",
+     "chat-app": {
+        title: "Real-Time Chat App",
+        role: "Flutter · Firebase · Realtime",
+        description:
+            "A modern WhatsApp-style chat application with real-time messaging, typing indicators, and media sharing. Designed for mobile-first use with a clean, minimal interface and responsive layout.",
+        features: [
+            "Realtime messaging with read receipts",
+            "Online status and typing indicators",
+            "Media sharing (images and attachments)",
+            "Chat list with last-message previews"
+        ],
+        images: [
+            "/Chat-App/image1.jpeg",
+           "/Chat-App/image2.jpeg",
+            "/Chat-App/image3.jpeg",
+            "/Chat-App/image4.jpeg",
+            "/Chat-App/image5.jpeg",
+            "/Chat-App/image6.jpeg",
+            "/Chat-App/image7.jpeg",
+            "/Chat-App/image8.jpeg",
+            "/Chat-App/image9.jpeg",
+            "/Chat-App/image10.jpeg",
+        ]
+    },
+    "cognitube-youtube": {
+        title: "Cognitube - A Youtube Chatbot",
+        role: "RAG",
         description: "An automated grading and feedback system for complex exams. Using local transformer models, it evaluates varied text answers, recognizes handwriting, and extracts insights to assist educators in grading faster and more accurately.",
         features: ["Handwriting recognition", "Automated grading", "Detailed feedback generation", "Secure local processing"],
         images: [
-            "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80&w=1200",
-            "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
-            "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200"
+             "/Youtube-Chatbot/image1.jpeg",
+           "/Youtube-Chatbot/image2.jpeg",
+           "/Youtube-Chatbot/image3.jpeg",
         ]
     },
-    "docker-execution": {
-        title: "Docker Execution Environment",
+    "codeit-execution": {
+        title: "CodeIt-Code Editor",
         role: "Architecture & Security",
         description: "A highly secure and scalable platform for executing user-submitted code in isolated environments. It leverages Docker containers to prevent malicious code execution, ensuring system stability while supporting multiple programming languages.",
         features: ["Isolated container execution", "Multi-language support", "Resource limitation & monitoring", "Automated scaling"],
         images: [
-            "https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&q=80&w=1200",
-            "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200",
-            "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&q=80&w=1200"
+            "/Code-Editor/image1.jpeg",
+            "/Code-Editor/image2.jpeg",
+            "/Code-Editor/image3.jpeg",
+            "/Code-Editor/image4.jpeg",
         ]
     },
-    "coding-app": {
-        title: "100-Level Coding App",
-        role: "Gamified Systems",
-        description: "A gamified platform designed to take beginners from zero to hero in programming. It features 100 levels of increasingly difficult coding challenges, complete with a rigorous reward system, leaderboards, and interactive tutorials.",
-        features: ["100 progressive levels", "Interactive code editor", "Gamified progression system", "Global leaderboards"],
-        images: [
-            "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1200",
-            "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=1200",
-            "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200"
-        ]
-    }
+   
 };
 
 export default function ProjectDetail({ params }: { params: { id: string } }) {
@@ -103,7 +146,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
                     </div>
                 </div>
 
-                <div className="space-y-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {project.images.map((img: string, idx: number) => (
                         <div
                             key={idx}
@@ -115,7 +158,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
                                 width={1200}
                                 height={800}
                                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700 ease-in-out"
-                                sizes="(max-width: 768px) 100vw, 1024px"
+                                sizes="(max-width: 768px) 100vw, 33vw"
                                 priority={idx === 0}
                             />
                         </div>

@@ -7,33 +7,42 @@ import Image from "next/image";
 
 const PROJECTS = [
     {
+        id: "e-commerce-app",
+        title: "E-Commerce App",
+        role: "Flutter & Nodejs",
+        link: "/projects/e-commerce-app",
+        image: "/project-thumbnail/e_commerce_thumbnail.webp"
+    },
+    {
         id: "learnmate-ai",
         title: "LearnMate AI",
         role: "Flutter & Python",
         link: "/projects/learnmate-ai",
-        image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=800"
+        image: "/project-thumbnail/learnmate_thumbnail.webp"
     },
-    {
-        id: "ai-exam-analyzer",
-        title: "AI Exam Analyzer",
-        role: "Local Transformers",
-        link: "/projects/ai-exam-analyzer",
-        image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80&w=800"
+       {
+        id: "chat-app",
+        title: "Real-Time Chat App",
+        role: "Messaging Interface",
+        link: "/projects/chat-app",
+        image: "/project-thumbnail/chat_app_thumbnail.webp"
     },
+        {
+        id: "cognitube-youtube",
+        title: "Cognitube - A Youtube Chatbot",
+        role: "Langchain & RAG",
+        link: "/projects/cognitube-youtube",
+        image: "/project-thumbnail/cognitube_thumbnail.webp"
+    },
+
     {
-        id: "docker-execution",
-        title: "Docker Execution Environment",
+        id: "codeit-execution",
+        title: "Codeit - Code Editor",
         role: "Architecture & Security",
-        link: "/projects/docker-execution",
-        image: "https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&q=80&w=800"
+        link: "/projects/codeit-execution",
+        image: "/project-thumbnail/code_editor_thumbnail.webp"
     },
-    {
-        id: "coding-app",
-        title: "100-Level Coding App",
-        role: "Gamified Systems",
-        link: "/projects/coding-app",
-        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
-    }
+ 
 ];
 
 export default function Projects() {

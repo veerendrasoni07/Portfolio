@@ -4,7 +4,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 import Overlay from "./Overlay";
 
-const FRAME_COUNT = 90;
+const FRAME_COUNT = 75;
 
 const getFrameBase = (index: number) =>
   `/sequence/frame_${index.toString().padStart(2, "0")}_delay-0.067s`;
@@ -52,7 +52,7 @@ export default function ScrollyCanvas() {
       };
 
       const webpImg = new Image();
-      webpImg.src = `${base}.webp`;
+      webpImg.src = `${base}.png`;
       webpImg.onload = () => {
         if (!isMounted) return;
         loadedImages[i] = webpImg;
